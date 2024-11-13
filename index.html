@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="me" id="about">
+        <div class="circle c1"></div>
+        <div class="container">
+            <div class="raja-img">
+                <img src="raja.png" alt="Raja Img">
+            </div>
+            <div class="me-txt">
+                <h2>Hello, I am</h2>
+                <h1>Raja Rane I. Mandapat</h1>
+                <p>A young student with the background of UI/UX designer that has passion for mobile & web design.</p>
+                <div class="btn-sec">
+                    <a href="#" class="btn">Hire me!</a>
+                </div>
+            </div>
+        </div>
+        <ul class="sidebar">
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+        </ul>
+    </section>
+    <div class="circle c2"></div>
+
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2>Portfolio</h2>
+                <p>Here are some of my recent projects.</p>
+            </div>
+            <div class="portfolio-grid-container">
+                <div class="portfolio-grid">
+                    <img src="pr1.png" alt="pr img">
+                    <h3>Project 1</h3>
+                    <p>Survey Form is the first project that I created</p>
+                </div>
+                <div class="portfolio-grid">
+                    <img src="pr2.png" alt="pr img">
+                    <h3>Project 2</h3>
+                    <p>Second project doing a tribute page with new functionality added</p>
+                </div>
+                <div class="portfolio-grid">
+                    <img src="pr3.png" alt="pr img">
+                    <h3>Project 3</h3>
+                    <p>Technical Document that provide easy navigation with hyperlinks and responsive design</p>
+                </div>
+                <div class="portfolio-grid">
+                    <img src="pr4.png" alt="pr img">
+                    <h3>Project 4</h3>
+                    <p>Forth project was about Product Landing. Focused on design like picture grid with masonry layout and hover function</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact me</h2>
+            <div class="contact-icons">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/RajaRaneMandapat">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span> - Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/afsdbbsl">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span> - Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:rajamandapat@gmail.com">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <span> - Google</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/raja.rane/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span> - Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Raja Mandapat. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebarItems = document.querySelectorAll(".sidebar li");
+            const sections = document.querySelectorAll("section");
+
+            window.addEventListener("scroll", function() {
+                let current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 50;
+                    const sectionHeight = section.clientHeight;
+                    const sectionID = section.getAttribute("id");
+
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = sectionID;
+                    }
+                });
+
+                sidebarItems.forEach((li, index) => {
+                    li.classList.remove("active");
+                    if (current === "about" && index === 0) {
+                        li.classList.add("active");
+                    } else if (current === "portfolio" && index === 1) {
+                        li.classList.add("active");
+                    } else if (current === "contact" && index === 2) {
+                        li.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

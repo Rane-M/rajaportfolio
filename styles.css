@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0
+    padding 0;
+    background-color: #d8c4a1;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0,2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    color: #333;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.raja-img {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.raja-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.me-text {
+    flex: 1;
+    text-align: left;
+}
+
+.me-text h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #666;
+}
+
+.me-text h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.me-text p {
+    color: #555;
+    margin-top: 10px;
+}
+
+.btn-sec {
+    margin-top: 20px;
+}
+
+.btn-sec .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #333;
+    font: 24px;
+}
+
+
+.sidebar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    color: #333;
+    font-size: 16px;
+    position: fixed;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.sidebar li.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+    position: fixed;
+}
+
+.circle.c1 {
+    top: 20px;
+    left: 20px;
+}
+
+.circle.c2 {
+    bottom: 20px;
+    right: 20px;
+}
+
+.portfolio {
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.portfolio-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.portfolio-header p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-grid {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-grid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-grid h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.portfolio-grid p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-me {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: relative;
+    color: #333;
+  }
+  
+  .contact-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-me p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: left;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contact-icons a {
+    text-decoration: none;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    position: relative;
+  }
+  
+  .contact-icons a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+    padding-right: 14px;
+  }
+  
+  .contact-icons a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .5s;
+  }
+  
+  
+  .contact-icons a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewY(-45deg);
+    transition: .5s;
+  }
+  
+  .contact-icons a:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewX(-45deg);
+    transition: .5s;
+  }
+  
+  .contact-icons a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+  }
+  
+  .contact-icons a:hover .fa {
+    color: #fff;
+  }
+  
+  .contact-icons a:hover span {
+    color: #fff;
+  }
+  
+  .contact-icons a:nth-child(1):hover {
+    background: #3b5998;
+  }
+  
+  .contact-icons a:nth-child(1):hover:before {
+    background: #365492;
+  }
+  
+  .contact-icons a:nth-child(1):hover:after {
+    background: #4a69ad;
+  }
+  
+  .contact-icons a:nth-child(2):hover {
+    background: #00aced;
+  }
+  
+  .contact-icons a:nth-child(2):hover:before {
+    background: #097aa5;
+  }
+  
+  .contact-icons a:nth-child(2):hover:after {
+    background: #53b9e0;
+  }
+  
+  .contact-icons a:nth-child(3):hover {
+    background: #dd4b39;
+  }
+  
+  .contact-icons a:nth-child(3):hover:before {
+    background: #b33a2b;
+  }
+  
+  .contact-icons a:nth-child(3):hover:after {
+    background: #e66a5a;
+  }
+  
+  .contact-icons a:nth-child(4):hover {
+    background: #e4405f;
+  }
+  
+  .contact-icons a:nth-child(4):hover:before {
+    background: #d81c3f;
+  }
+  
+  .contact-icons a:nth-child(4):hover:after {
+    background: #e46880;
+  }
+  
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
